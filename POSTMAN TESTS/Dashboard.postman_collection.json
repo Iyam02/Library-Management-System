@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "53e108ef-db37-4069-98d0-1f8d9e050688",
+		"name": "Dashboard",
+		"description": "This collection contains APIs related to the Library Management System dashboard. It includes separate folders for both the **Admin Dashboard** and **User Dashboard**. The **Admin Dashboard** allows administrators to manage users, books, and transactions, while the **User Dashboard** provides functionalities for users to view their account details,",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33193381"
+	},
+	"item": [
+		{
+			"name": "User Dashboard",
+			"item": [
+				{
+					"name": "Get User Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/getUser-name",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"getUser-name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Borrowed Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/get-borrowed-books",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"get-borrowed-books"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Tests the features and functionality present in the user's dashboard"
+		},
+		{
+			"name": "Admin Dashboard",
+			"item": [
+				{
+					"name": "Display Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/get-books",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"get-books"
+							]
+						},
+						"description": "Returns a list of all books available in the library, enabling admins to monitor the inventory and availability of resources."
+					},
+					"response": []
+				},
+				{
+					"name": "Display Total Number of Members",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/total-members",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"total-members"
+							]
+						},
+						"description": " Fetches a list of all registered members in the library system"
+					},
+					"response": []
+				},
+				{
+					"name": "Display Members",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/get-members",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"get-members"
+							]
+						},
+						"description": "Fetches a list of all registered members in the library system,\n"
+					},
+					"response": []
+				}
+			],
+			"description": "This collection provides a set of API endpoints designed for administrative functionalities within a library management system.\n\nThese endpoints allow admins to retrieve essential information about the library's members and books, facilitating effective oversight."
+		}
+	]
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        .navbar {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+
+        .custom-login-form {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .custom-info {
+            background-color: #222831;
+            color: #EEEEEE;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+        }
+
+        .custom-info h2, .custom-info p {
+            color: #EEEEEE;
+        }
+
+        .form-control {
+            height: 55px;
+        }
+
+        /* Center the login form */
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Library Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <button class="btn btn-outline-info" id="home-btn" onclick="handleHomeClickBtn()">Home</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="login-container">
+        <div class="custom-login-form">
+            <h3 class="text-center">Staff Login</h3>
+            <form class="form bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="staff-login-form">
+                <div class="mb-3">
+                    <i class="bi bi-envelope me-2 icon-large"></i>
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <i class="bi bi-shield lock me-2 icon-large"></i>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-outline-info w-100">Login</button>
+
+                <!-- Displays error message -->       
+                <div id="alertDiv"   style="display: none;">
+                    <div id="errorDivMessage">
+                    
+                    </div>
+                </div>
+
+                <div class="text-center mt-3">
+                    <p><a href="">Lost Password?</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="text-center">
+                <p class="text-muted">&copy; 2024 Library Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- JS File -->
+    <script src="/scripts/staff_login.js"></script>
+
+</body>
+</html>
+

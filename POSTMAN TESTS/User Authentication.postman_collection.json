@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "5183bc15-a62b-4bf5-8a80-9b512aea5ad0",
+		"name": "User Authentication",
+		"description": "This collection handles registering new users and logging them in to their dashboard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33193381"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Clyde Sobiri\",\n    \"email\": \"sobiri@gmail.com\",\n    \"password\": \"Sobiri123#\",\n    \"confirmPassword\" : \"Sobiri123#\",\n    \"mobile\": \"+254714892356\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"sobiri@gmail.com\",\n    \"password\": \"Sobiri123#\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log out",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/user/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"logout"
+					]
+				},
+				"description": "\nHere’s a description for the logout API route using session-based authentication:\n\nLogout API:\nEndpoint: POST /api/staff/logout\n\nDescription:\nThis API logs out a currently authenticated user by terminating their active session. It ensures that the user's session is destroyed, effectively logging them out from the system. After a successful logout, the user is redirected to the home page"
+			},
+			"response": []
+		}
+	]
+}
