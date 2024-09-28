@@ -28,9 +28,9 @@ A web-based Library Management System built with Bootstrap, MySQL, Express, Node
 
 ### API Endpoints
 
-  POST /api/user/register - Register a new user.
-  POST /api/user/login - Login for users.
-  POST /api/staff/login - Login for staff.
-  GET /api/get-books - Retrieve available books.
-  GET /api/get-members - Retrieve library members.
-  POST /api/user/logout - Log out from the session.
+ 1. POST /api/user/register - Register a new user.
+ 2. POST /api/user/login - Login for users.
+ 3. POST /api/staff/login - Login for staff.
+ 4. GET /api/get-books - Retrieve available books.
+ 5. GET /api/get-members - Retrieve library members.
+ 6. POST /api/user/logout - Log out from the session.
